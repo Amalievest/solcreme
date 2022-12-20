@@ -1,0 +1,239 @@
+
+.stjerner_tal {
+display: flex;
+flex-direction: row;
+}
+
+.tal {
+margin-top: -0.4%;
+padding-left: 3%;
+}
+
+.title {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.mand_img{
+    border:1px solid #000000;
+    margin-top: 2rem;
+    width: auto;
+    left: auto;
+}
+
+/*-----------------------Produktindhold--------------------*/
+.collapsible {
+    background-color: var(--bla);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: var(--orange);
+  }
+  
+  .content {
+    padding: 0 20px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+/*------------------Kunde anmeldelser--------------------*/
+.kunder {
+    margin-top: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;;
+}
+
+  /*--------------------Nyhedsbrev---------------------*/
+  .tilmeld{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+#button {
+    background: #5d814d;
+    color: var(--hvid);
+    padding: 6px 60px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#button:hover {
+    color: var(--hvid);
+    background: #405934;
+}
+
+/*---------------------KØB KNAP----------------------*/
+  .button {
+    background: #5d814d;
+    color: var(--hvid);
+    padding: 6px 113px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    display: block;
+    width: 71%;
+    margin-left:15%;
+    margin-right:15%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+}
+
+.button:hover {
+    color: var(--hvid);
+    background: #405934;
+}
+
+.nyhedsbrev{
+    margin-top: -5%;
+}
+
+/*-----------------------------------------------------
+MEDIA QURIES
+-----------------------------------------------------*/
+
+/*-----------------Vis kun i toppen på mobil-------------------*/
+    @media screen and (max-width: 900px) {
+        .test{
+            display: none;
+        }
+
+        .title2 {
+            display: none;
+        }
+
+/*--------------------  DROPDOWN KNAP---------------------
+-----Hjælp fra: https://www.w3schools.com/howto/howto_css_button_split.asp-------------------*/  
+        .dropdown {
+            position: absolute;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {background-color: rgb(221, 221, 221)}
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          
+          .btn:hover, .dropdown:hover .btn {
+            background-color: orange;
+          }
+        
+    }
+
+/*=============================================================================================
+=========================================   TABLET   ==========================================
+=============================================================================================*/
+@media screen and (min-width: 900px) {
+/*-- Vis kun på tablet og PC--*/
+.title{
+    display: none;
+    }
+
+.button {
+    width: 96%;
+    margin-left:-17%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.lister {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+}
+
+#button {
+  padding: 6px 113px;
+}
+/*--------------------  DROPDOWN KNAP---------------------
+-----Hjælp fra: https://www.w3schools.com/howto/howto_css_button_split.asp-------------------*/  
+  
+#dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(221, 221, 221)}
+  
+  #dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .btn:hover, #dropdown:hover .btn {
+    background-color: orange;
+  }
+}
+
+
+/*=============================================================================================
+        ========================================   COMPUTER   =========================================
+        ===========================================================================================*/
+        @media screen and (min-width: 1200px) {
+            .button {
+                width: 64%;
+                margin-left:4%;
+            }
+            
+            .lister {
+                padding-left: 7.2rem;
+                padding-right: 7rem;
+            }
+
+            .nyhedsbrev{
+                margin-top: -2%;
+            }
+   
+        }

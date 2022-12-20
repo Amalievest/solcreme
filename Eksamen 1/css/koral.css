@@ -1,0 +1,120 @@
+/*----------------MOBIL------------------*/
+
+.forside_o {
+    padding-left: 5%;
+}
+
+.mand_img {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.overskrift_r {
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: left;
+    padding-top: 2%;
+}
+
+.koralvenlig {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #5d814d;
+    ;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.tilmeld {
+    padding-left: 2.6rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    font-family: Arial;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bokse {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--beige);
+}
+
+
+.nyhedsbrev {
+    padding-top: 2rem;
+}
+
+
+/*=============================================================================================
+    =========================================   TABLET   ==========================================
+    =============================================================================================*/
+
+@media screen and (min-width: 900px) {
+
+    .overskrift_r {
+        margin-left: 1%;
+        margin-right: 2%;
+    }
+
+    .produkt_row {
+        margin-right: 1%;
+    }
+
+    .koralvenlig {
+        padding-left: 30.3rem;
+    }
+
+    .mand_img {
+        margin-right: 10rem;
+        width: 110%;
+        margin-bottom: 2rem;
+    }
+}
+
+/*-------mellem tablet og pc-----------*/
+@media screen and (min-width: 1050px) {
+    .koralvenlig {
+        padding-left: 35.3rem;
+    }
+}
+
+/*=============================================================================================
+            ========================================   COMPUTER   =========================================
+            ===========================================================================================*/
+@media screen and (min-width: 1200px) {
+
+    .mand_img {
+        margin-right: 12rem;
+        width: 110%;
+        margin-bottom: 2rem;
+    }
+
+    .koralvenlig {
+        padding-left: 40.5rem;
+        padding-top: 2rem;
+    }
+
+}
+
+/*------- Størrer computerskærm---------*/
+@media screen and (min-width: 1400px) {
+
+    .koralvenlig {
+        padding-left: 48.5rem;
+        padding-top: 2rem;
+    }
+
+}

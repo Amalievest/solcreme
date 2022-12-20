@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Amalies hjemmeside af rudolph cares solcreme. Her kan man kan købe solcreme som er dansk produceret og bæredygtigte.">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produkter.css">
+    <title>Ansigts solcreme | Rudolph Care </title>
+    <!-- Favicon i toppen af siden -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!----------Stjerner------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonte og ikoner -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+
+
+<!------------------------------------------------------------------------
+BODY
+-------------------------------------------------------------------------->
+
+<body>
+
+    <!------------------------------------------------------------------------
+BURGERMENU - https://alvarotrigo.com/blog/hamburger-menu-css/ (nr. 11)
+------------------------------------------------------------------------->
+    <header>
+        <!-------------------------------Tre streger i menuen-------------------------->
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+                <label class="m-menu__toggle" for="menu">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                        stroke-linecap="butt" stroke-linejoin="arcs">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </label>
+                <label class="m-menu__overlay" for="menu"></label>
+
+                <!----------------------------Logo og Google ikoner i navbar--------------------------->
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo til forsiden" class="logo"></a>
+                <div class="nav_ikoner">
+                    <i class="material-icons" id="ikon_favorite">favorite</i>
+                    <i class="material-icons" id="ikon_shoppingbag">shopping_bag</i>
+                </div>
+
+                <!------------------------------Kryds i menu----------------------------->
+                <div class="m-menu">
+                    <div class="m-menu__header">
+                        <label class="m-menu__toggle" for="menu">
+                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke-linecap="butt" stroke-linejoin="arcs">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </label>
+                        <span>Menu</span>
+                    </div>
+<!------------------------------SEKTION 1----------------------------------->
+<ul>
+    <li>
+        <label class="a-label__chevron" for="item-1">Solcreme</label>
+        <input type="checkbox" id="item-1" name="item-1" class="m-menu__checkbox">
+        <div class="m-menu">
+            <div class="m-menu__header">
+                <label class="m-menu__toggle" for="item-1">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                    </svg>
+                </label>
+                <span>Solcreme</span>
+            </div>
+            <ul>
+                <li>
+                    <label><a href="produkter.html" class="a_menu">Solcreme til ansigtet</a></label>
+                </li>
+                <li>
+                    <label><a href="404.html" class="a_menu">Solcreme til kroppen</a></label>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <!------------------------------SEKTION 2----------------------------------->
+
+    <li>
+        <label class="a-label__chevron" for="item-2">Bæredygtighed</label>
+        <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+        <div class="m-menu">
+            <div class="m-menu__header">
+                <label class="m-menu__toggle" for="item-2">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                    </svg>
+                </label>
+                <span>Bæredygtighed</span>
+            </div>
+            <ul>
+                <li><label><a href="404.html" class="a_menu">Bæredygtighedsrapport</a></label></li>
+                <li> <label><a href="404.html" class="a_menu">Strategi</a></label></li>
+                <li>
+                    <label class="a-label__chevron" for="item-2-3">Certificeringer</label>
+                    <input type="checkbox" id="item-2-3" name="item-2" class="m-menu__checkbox">
+                    <div class="m-menu">
+                        <div class="m-menu__header">
+                            <label class="m-menu__toggle" for="item-2-3">
+                                <svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+                                    stroke="#000000" stroke-width="2" stroke-linecap="butt"
+                                    stroke-linejoin="arcs">
+                                    <path d="M19 12H6M12 5l-7 7 7 7" />
+                                </svg>
+                            </label>
+                            <span>Certificeringer</span>
+                        </div>
+                        <ul>
+                            <li><label><a href="404.html" class="a_menu">B Corp</a></label></li>
+                            <li><label><a href="404.html" class="a_menu">COSMOS</a></label></li>
+                            <li><label><a href="404.html" class="a_menu">GOTS</a></label></li>
+                            <li><label><a href="404.html" class="a_menu">Svanemærket</a></label></li>
+                            <li><label><a href="404.html" class="a_menu">Vegan Trademark</a></label></li>
+                        </ul>
+                </li>
+                <li><label><a href="404.html" class="a_menu">Emballage</a></label></li>
+        </div>
+    </li>
+    <!------------------------------SEKTION 3----------------------------------->
+    <li><label><a href="404.html" class="a_menu">Aftersun</a></label></li>
+    <!------------------------------SEKTION 4----------------------------------->
+    <li><label><a href="404.html" class="a_menu">Selvbruner</a></label></li>
+    <!------------------------------SEKTION 5----------------------------------->
+    <li>
+        <label class="a-label__chevron" for="item-5">Godt at vide</label>
+        <input type="checkbox" id="item-5" name="item-5" class="m-menu__checkbox">
+        <div class="m-menu">
+            <div class="m-menu__header">
+                <label class="m-menu__toggle" for="item-5">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                    </svg>
+                </label>
+                <span>Facts</span>
+            </div>
+            <ul>
+                <li><label><a href="404.html" class="a_menu">Hvilken solfactor skal jeg bruge?</a></label></li>
+                <li><label><a href="koral.html" class="a_menu">Koralvenlig solbeskyttelse</a></label></li>
+                <li><label><a href="404.html" class="a_menu">10 tips og tricks til selvbruner</a></label></li>
+            </ul>
+        </div>
+    </li>
+
+    <!------------------------------SEKTION 6----------------------------------->
+    <li>
+        <label class="a-label__chevron" for="item-6">Om</label>
+        <input type="checkbox" id="item-6" name="item-6" class="m-menu__checkbox">
+        <div class="m-menu">
+            <div class="m-menu__header">
+                <label class="m-menu__toggle" for="item-6">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                    </svg>
+                </label>
+                <span>Om</span>
+            </div>
+            <ul>
+                <li><label><a href="404.html" class="a_menu">Lær os at kende</a></label></li>
+                <li><label><a href="404.html" class="a_menu">Lavet i Danmark</a></label></li>
+            </ul>
+        </div>
+    </li>
+
+</ul>
+</div>
+</nav>
+</div>
+        <!------------------------------------------------------------------
+DROPDOWN MENU (https://www.w3schools.com/howto/howto_css_dropdown.asp)
+------------------------------------------------------------------->
+<nav class="menu_bar">
+    <div class="menu_items">
+
+        <div class="dropdown">
+            <form action="#" class="menu_item"><button class="dropbutton">Solcreme</button></form>
+            <div class="drop_punkter">
+                <a href="produkter.html">Solcreme til ansigtet</a>
+                <a href="404.html">Solcreme til kroppen</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <form action="#" class="menu_item"><button class="dropbutton">Bæredygtighed</button></form>
+            <div class="drop_punkter">
+                <a href="404.html">Bæredygtighedsrapport</a>
+                <a href="404.html">Strategi</a>
+                <a href="404.html">Certificeringer </a>
+                <a href="404.html">B Corp</a>
+                <a href="404.html">COSMOS</a>
+                <a href="404.html">GOTS</a>
+                <a href="404.html">Svanemærket</a>
+                <a href="404.html">Vegan Trademark</a>
+                <a href="404.html">Emballage</a>
+            </div>
+        </div>
+
+        <div class="dropdown dropdown_ekstra_bue">
+            <form action="404.html" class="menu_item"><button class="dropbutton">Aftersun</button></form>
+        </div>
+
+        <div class="dropdown">
+            <form action="404.html" class="menu_item"><button class="dropbutton">Selvbruner</button></form>
+        </div>
+
+        <div class="dropdown">
+            <form action="#" class="menu_item dropdown_ekstra_bue"><button class="dropbutton">Godt at vide</button>
+            </form>
+            <div class="drop_punkter">
+                <a href="404.html">Hvilken solfactor skal jeg bruge?</a>
+                <a href="koral.html">Koralvenlig solbeskyttelse</a>
+                <a href="404.html">10 tips og tricks til selvbruner</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <form action="#" class="menu_item"><button class="dropbutton">Om</button></form>
+            <div class="drop_punkter">
+                <a href="404.html">Lær os at kende</a>
+                <a href="404.html">Lavet i Danmark</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+    <!---------------------------------------------------------------------------------------
+                                    Main
+---------------------------------------------------------------------------------------->
+    <h1 class="over_o"> Solcreme til ansigtet </h1>
+    <h3 class="under_o">Hvad sker der, hvis ikke man bruger solcreme til ansigtet?</h3>
+
+    <div class="produkt_row">
+        <div class="produkt_inner_row">
+            <div class="sol_row">
+                <img src="img/mand.png" alt="mand der tager solcreme på" class="mand_img">
+            </div>
+        </div>
+        <!-----------------------------Informaiton----------------------------->
+
+        <section class="overskrift_r pro_info" >
+            <p class="lang-tekst">
+                En god ansigtssolcreme en af de bedste investeringer, man kan lave i sin hudplejerutine. Den fungerer
+                nemlig som et skjold mod solens stråler, som ellers kan give en tidlig aldring af din hud – hvilket vil
+                sige, at du får tidligere rynker end du ellers ville. <br>
+                <br> Dog er der også andre (vigtigere) grunde til at beskytte sig mod solen. Solens stråler kan også
+                give soleksem, pigmentforandringer og i værste tilfælde hudkræft. Derfor er det altid en god idé at være
+                på forkant og give solbeskyttelse til huden i form af en god solcreme til ansigtet. </p>
+        </section>
+    </div>
+
+    <!-------------------------sorter knap https://www.w3schools.com------------->
+    <div class="sort_k">
+        <select class="sorter_underkategorier">
+            <option value="popularitet">Solfaktor: lav til høj</option>
+            <option value="pris">Solfaktor: høj til lav</option>
+            <option value="pris">Sortér efter nyeste</option>
+            <option value="pris">Bedømmelser</option>
+            <option value="pris lav">Sortér efter pris: lav til høj </option>
+            <option value="pris hoej">Sortér efter pris: høj til lav </option>
+        </select>
+    </div>
+
+    <!-------------------------------PRODUKTER-------------------------------------->
+    <!------------------------------------PRODUKT 1----------------------------------->
+
+    <section class="jul">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="img/hjerte.png" alt="hjerte" class="hjerte">
+                    <img src="img/ansigt1.png" alt="Solcreme" style="width:80%">
+                    <div class="container">
+                        <!--------stjerner------>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <div class="tal">
+                            <p> 124 </p>
+                        </div>
+                        <div class="jul_tekst">
+                            <p> <b>Rudolph Care</b> <br> Organic Sun Face Cream SPF 15 <br> 50 ml <br><br><b>214,95 kr</b> </p>
+                        </div>
+                        <form action="koeb1.html"> <button class="button" role="button"> Læs mere</button> </form>
+                    </div>
+                </div>
+            </div>
+<!------------------------------------PRODUKT 2----------------------------------->
+    <div class="column">
+                <div class="card">
+                    <img src="img/hjerte.png" alt="hjerte" class="hjerte">
+                    <img src="img/ansigt2.png" alt="Solcreme" style="width:80%">
+                    <div class="container">
+                        <!--------stjerner------>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <div class="tal">
+                            <p> 143 </p>
+                        </div>
+                        <div class="jul_tekst">
+                            <p> <b>Rudolph Care</b> <br> Organic Sun Face Cream SPF 30 <br> 50 ml <br><br><b>234,95 kr</b> </p>
+                        </div>
+                        <form action="koeb2.html"> <button class="button" role="button"> Læs mere</button> </form>
+                
+                    </div>
+                </div>
+            </div>
+<!------------------------------------PRODUKT 3----------------------------------->
+       
+            <div class="column">
+                <div class="card">
+                    <img src="img/hjerte.png" alt="hjerte" class="hjerte">
+                    <img src="img/ansigt4.png" alt="Solcreme" style="width:80%">
+                    <div class="container">
+                        <!--------stjerner------>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <div class="tal">
+                            <p> 213 </p>
+                        </div>
+                        <div class="jul_tekst">
+                            <p> <b>Rudolph Care</b> <br> Organic Sun Stick SPF 50 <br> 15 ml <br><br><b>144,95 kr</b> </p>
+                        </div>
+                        <form action="koeb3.html"> <button class="button" role="button"> Læs mere</button> </form>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!------------------------------------PRODUKT 4----------------------------------->
+            <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="img/hjerte.png" alt="hjerte" class="hjerte">
+                    <img src="img/ansigt3.png" alt="Solcreme" style="width:80%">
+                    <div class="container">
+                        <!--------stjerner------>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <div class="tal">
+                            <p> 56 </p>
+                        </div>
+                        <div class="jul_tekst">
+                            <p> <b>Rudolph Care</b> <br> Organic Sun Face Cream SPF 50 <br> 50 ml <br><br><b>264,95 kr</b> </p>
+                        </div>
+
+                        <div>
+                            <form action="koeb.html"> <button class="button" role="button"> Læs mere</button> </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!------------------------------------PRODUKT 5----------------------------------->
+
+            <div class="column">
+                <div class="card">
+                    <img src="img/hjerte.png" alt="hjerte" class="hjerte">
+                    <img src="img/ansigt4.png" alt="Solcreme" style="width:80%">
+                    <div class="container">
+                        <!--------stjerner------>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <div class="tal">
+                            <p> 213 </p>
+                        </div>
+                        <div class="jul_tekst">
+                            <p> <b>Rudolph Care</b> <br> Organic Sun Face Cream SPF 50 <br> 15 ml <br><br><b>144,95 kr</b> </p>
+                        </div>
+                        <form action="koeb3.html"> <button class="button" role="button"> Læs mere</button> </form>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------PRODUKT 6----------------------------------->
+            <div class="column">
+                <div class="card">
+                    <img src="img/hjerte.png" alt="hjerte" class="hjerte">
+                    <img src="img/ansigt2.png" alt="Solcreme" style="width:80%">
+                    <div class="container">
+                        <!--------stjerner------>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <div class="tal">
+                            <p> 143 </p>
+                        </div>
+                        <div class="jul_tekst">
+                            <p> <b>Rudolph Care</b> <br> Organic Sun Face Cream SPF 30 <br> 50 ml <br><br><b>234,95 kr</b> </p>
+                        </div>
+                        <form action="koeb2.html"> <button class="button" role="button"> Læs mere</button> </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!----------------------------------Artikel 2 --------------------------------->
+
+<h2 id="artikel_overskrift" class="forside_o"> Derfor er det en god ide at benytte ansigtssolcreme </h2>
+
+<div id= "artikel" class="produkt_row">
+    <div class="produkt_inner_row">
+        <div class="sol_row">
+            <img src="img/strand.jpg" alt="mand der tager solcreme på" class="mand_img">
+        </div>
+
+    </div>
+    <!-----------------------------Informaiton----------------------------->
+
+    <section class="overskrift_r pro_info">
+        <p class="lang-tekst">
+            Solen er dejlig, men kan også være farlig! Når du opholder dig i solen udsætter du huden for skadelige UVA- og UVB-stråler. Uden optimal beskyttelse med solcreme, trænger strålerne dybt ind i huden og kan på sigt forsage skader, som kan udvikle sig alvorligt. Især ansigtet har meget fin og sart hud, så det er meget vigtigt, at man beskytter huden med en effektiv solbeskyttelse, hvis UV-indekset er på 3 eller derover. <br> <br>
+            Med ansigtssolcreme kan du også hjælpe huden på vej på den lange bane. Særligt UVA-strålerne forsager nemlig aldrig af huden, som betyder at huden mister hurtigere sin spændstighed og elasticitet, hvis ikke du beskytter den med ansigtssolcreme. <br> <br>
+            Til manden der læser med! Selvom du synes, at solcreme er for kvinder, så tænk på, at det er nødvendigt for ikke at blive skoldet og for at forebygge kræft i huden. Husk også på, at du er rollemodel for dine børn og kan hjælpe dem med at passe på deres hud ved selv at gå foran, og at man stadig får en fin kulør, når man bruger solcreme</p>
+    </section>
+</div>
+
+<!-------------------------------------------Nyhedsbrev------------------------------------------------------
+--------------------hjælp fra: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_newsletter----------------------------->
+
+<section class="nyhedsbrev">
+    <h2 class="tilmeld"> Tilmeld dig vores nyhedsbrev</h2>
+    
+    <form action="/action_page.php">
+      <div class="bokse">
+        <p>Vi lover, det bliver luksuiøst, lærerigt og ikke mindst bæredygtigt.</p>
+      </div>
+    
+      <div class="bokse">
+        <input type="text" placeholder="Navn" name="name" required>
+        <input type="text" placeholder="Email adresse" name="mail" required>
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe"> Ja, jeg vil gerne modtage 4-6 nyhedsbreve om måneden. Du kan til enhver tid framelde sig nyhedsbrevet via et link i bunden af nyhedsbrevet eller ved at skrive en mail til kontakt@rudolhpcare.dk. Jeg accepterer hermed, at Rudolph Care må gemme og dele mine data if. vores cookies-og privatlivspolitik.
+        </label>
+      </div>
+    
+      <div class="bokse">
+        <p><button class="button">Tilmeld nyhedsbrev</button></p>
+      </div>
+    </form>
+    
+    </section>
+    
+<!------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------->
+<a href="index.html"><img src="img/sol.png" alt="sol med logo" class="sol"></a>
+
+    <footer>
+
+        <!-- FØLG OS -->
+        <div class="footer_card">
+            <h3 class="footer_card_header">Sociale Medier</h3>
+                <a href="https://www.facebook.com/rudolphcare" class="footer_link">Facebook</a>
+                <a href="https://www.youtube.com/@rudolphcare1174" class="footer_link">Youtube</a>
+                <a href="https://www.instagram.com/rudolphcare/" class="footer_link">Instagram</a>
+        </div>
+
+        <!-- BUTIKSINFORMATION -->
+        <div class="footer_card">
+            <h3 class="footer_card_header">Kontakt</h3>
+                <!-- telefon -->
+                <p class="footer_link">
+                    <i class="material-icons" id="ikon_call">call</i>
+                    <a href="#" class="footer_link">+45 53 57 11 23</a>
+                </p>
+                <!-- mail -->
+                <p class="footer_link">
+                    <i class="material-icons" id="ikon_mail">mail</i>
+                    <a href="#" class="footer_link">kontakt@rudolphcare.com</a>
+                </p>
+                <!-- om os -->
+                <a href="#" class="footer_link">Om</a>
+
+        </div>
+
+        <!-- INFORMATION -->
+        <div class="footer_card">
+            <h3 class="footer_card_header">Info</h3>
+                <a href="#" class="footer_link">Handelsbetingelser</a>
+                <a href="#" class="footer_link">Cookies- og privatlivspolitik</a>
+                <a href="#" class="footer_link">Nyhedsbrev</a>
+                <a href="#" class="footer_link">Forhandlere</a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+.over_o{
+    padding-left: 2rem;
+}
+
+.under_o{
+    padding-left: 2rem;
+}
+
+.mand_img {
+    margin-right: 5%;
+    margin-bottom: 2.5%;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-left: 5%;
+}
+
+/*---------------- INFORMATION/BESKRIVELSE SECTION ---------------*/
+.overskrift_r {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: left;
+    padding-top: 2%;
+}
+
+.lang-tekst {
+    line-height: 160%;
+    margin-right: 2.5%;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sort_k {
+    padding-left: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+.sorter_underkategorier {
+    font-family: 'Baskerville Old Face', 'Century Schoolbook', serif
+}
+
+
+/*-----------------------------------------------PRODUKTER---------------------------------------*/
+
+.hjerte {
+    width: 13%;
+    height: auto;
+    display: flex;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.hjerte:hover {
+    background-color: #ad3541;
+}
+
+.jul {
+    background-color: var(--hvid);
+    padding-top: 2rem;
+}
+
+.jul_tekst {
+    color: black;
+}
+
+.card {
+    text-align: center;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.tal {
+    color: gray;
+}
+
+.checked {
+    color: orange;
+}
+
+/*------------------------------------------Nyhedsbrev-------------------------------*/
+
+.tilmeld{
+    margin-top: 8rem;
+}
+
+/*-----------------------------------------------------
+MEDIA QURIES
+-----------------------------------------------------*/
+@media screen and (max-width: 900px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+#artikel, #artikel_overskrift{
+    display: none;
+}
+}
+
+/*=============================================================================================
+    =========================================   TABLET   ==========================================
+    =============================================================================================*/
+
+@media screen and (min-width: 900px) {
+
+
+    .sol_row {
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .produkt_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2.5%;
+    }
+
+    .produkt_inner_row {
+        width: 50%;
+    }
+
+    .pro_info {
+        width: 50%;
+        padding-top: 0%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .an_info {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .mand_img {
+        margin-right: 9rem;
+        margin-top: 5%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+/*=============================================================================================
+        ========================================   COMPUTER   =========================================
+        ===========================================================================================*/
+@media screen and (min-width: 1200px) {
+
+    .over_o{
+        padding-left: 2rem;
+    }
+    .under_o{
+        padding-left: 2rem;
+    }
+
+    .mand_img {
+        margin-right: 12rem;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+}

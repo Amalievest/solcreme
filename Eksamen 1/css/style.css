@@ -1,0 +1,720 @@
+/* Basic reset */
+:after:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------------
+FARVER 
+-----------------------------------------------------------------------*/
+:root {
+    --hvid: #ffffff;
+    --sort: #333333;
+    --bla: #02163c;
+    --gron: #5d814d;
+    --orange: #ffa600;
+    --beige: #f2efea;
+}
+
+/*-----------------------------------------------------------------------
+BODY
+-----------------------------------------------------------------------*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--beige);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Baskerville Old Face', 'Century Schoolbook', serif;
+}
+
+/*=============================================================================================
+==========================================   MOBIL   ==========================================
+=============================================================================================*/
+
+/*-----------------------------------------------------------------------
+Burgermenu - https://alvarotrigo.com/blog/hamburger-menu-css/ (nr. 11)
+-----------------------------------------------------------------------*/
+nav {
+    background-color: var(--bla);
+    height: 3rem;
+    padding: 0 16px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+nav .m-menu__checkbox {
+    display: none;
+}
+
+nav label.m-menu__toggle {
+    cursor: pointer;
+}
+
+nav .m-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 450px;
+    width: calc(100vw - 30px);
+    height: 100%;
+    -moz-transform: translate3d(-450px, 0, 0);
+    -o-transform: translate3d(-450px, 0, 0);
+    -ms-transform: translate3d(-450px, 0, 0);
+    -webkit-transform: translate3d(-450px, 0, 0);
+    transform: translate3d(-450px, 0, 0);
+    -moz-transition: transform 0.35s;
+    -o-transition: transform 0.35s;
+    -webkit-transition: transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 1;
+    overflow: hidden;
+    background-color: var(--hvid);
+}
+
+
+nav .m-menu__overlay {
+    background-color: rgba(103, 103, 103, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+nav .m-menu__header {
+    padding: 0 16px;
+    height: 50px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+nav .m-menu__header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+nav .m-menu .m-menu {
+    -moz-transform: translate3d(480px, 0, 0);
+    -o-transform: translate3d(480px, 0, 0);
+    -ms-transform: translate3d(480px, 0, 0);
+    -webkit-transform: translate3d(480px, 0, 0);
+    transform: translate3d(480px, 0, 0);
+}
+
+nav .m-menu ul {
+    height: 100%;
+    overflow-y: auto;
+}
+
+nav .m-menu ul li a,
+nav .m-menu ul li label {
+    display: block;
+    text-align: left;
+    padding: 0px;
+    line-height: 65px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+}
+
+nav .m-menu ul li a:hover,
+nav .m-menu ul li label:hover {
+    color: var(--orange);
+}
+
+.a_menu {
+    padding-left: 0px
+}
+
+
+nav .m-menu ul li label.a-label__chevron::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-color: var(--bla);
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -5px;
+    right: 16px;
+}
+
+nav .m-menu ul li .-invisible {
+    border-bottom: 0;
+}
+
+nav .m-menu .m-menu label.m-menu__toggle {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 0;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+nav .m-menu__checkbox:checked~.m-menu__overlay {
+    display: block;
+}
+
+nav .m-menu__checkbox:checked~.m-menu {
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+svg {
+    stroke: var(--orange);
+}
+
+/*- Skjul dropdown menu -*/
+.menu_items {
+    display: none;
+}
+
+.menu_bar {
+    height: 0px;
+}
+
+/*------------------------------------------------------------------------------
+------------------------------- FORSIDEN ØVERST---------------------------------*/
+
+.logo {
+    padding-top: 1px;
+    padding-left: 4%;
+    height: 80%;
+    width: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+/*-------------------------------OVERSKRIFTER------------------------------*/
+.forside_o {
+    margin-left: 1rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: auto;
+}
+
+.forside_u {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0;
+}
+
+.forside_section_header {
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/*----------------------------------Billeder show på forside-------------------------------------------------
+ -------------kredit til: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple------------*/
+
+.numbertext {
+    color: #00000063;
+    padding-bottom: 15px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides1,
+.mySlides2 {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.mySlides1,
+.mySlides2 {
+    text-align: center;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -80px;
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: var(--bla);
+    color: var(--orange);
+}
+
+.tekst_ub {
+    text-align: center;
+}
+
+.beskrivelse {
+    line-height: 160%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+    background: #5d814d;
+    color: var(--hvid);
+    padding: 6px 113px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    font-size: 1em;
+    display: block;
+    width: 20rem;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button:hover {
+    color: var(--hvid);
+    background: #405934;
+}
+
+/*-------------------------------JUL-------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 36px;
+    padding: 0 20px;
+}
+
+.jul {
+    background-color: #ad3541;
+}
+
+.jul_o_tekst {
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.jul_tekst {
+    color: rgb(255, 255, 255);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #5d814d;
+    ;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*------------------------------------------Nyhedsbrev-------------------------------*/
+
+.tilmeld {
+    padding-left: 2.6rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    font-family: Arial;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bokse {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--beige);
+}
+
+input[type=text],
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: var(--gron);
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+/*--------------------------footer*----------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 17%;
+    background-color: var(--bla);
+}
+
+/*------billede af sol jeg har tegnet---------*/
+.sol {
+    width: 12rem;
+    height: auto;
+    padding-bottom: 0;
+    transform: translate(0px, 36px);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.footer_card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+
+.footer_card_header {
+    color: var(--hvid);
+    padding: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+/*------------------------ikoner i menu-------------------*/
+#ikon_shoppingbag {
+    color: var(--hvid);
+    padding-left: 5px;
+}
+
+#ikon_favorite {
+    color: rgb(124, 17, 17);
+    padding-left: 5px;
+}
+
+/*------------------------ikoner i footer-------------------*/
+
+#ikon_mail,
+#ikon_call {
+    color: var(--orange);
+}
+
+.footer_link {
+    color: var(--hvid);
+    text-decoration: none;
+    padding: 5px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.footer_link:hover {
+    color: var(--orange);
+}
+
+/*-----------------------------------------------------
+MEDIA QURIES
+-----------------------------------------------------*/
+
+@media screen and (max-width: 900px) {
+
+    .nyheder,
+    .lang_tekststyk {
+        display: none;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/*=============================================================================================
+=========================================   TABLET   ==========================================
+=============================================================================================*/
+
+@media screen and (min-width: 900px) {
+    .overskrifter {
+        display: flex;
+        flex-direction: row;
+        padding-left: 2rem;
+    }
+
+    /*-------------------------------OVERSKRIFTER------------------------------*/
+    .forside_u {
+        margin-top: 2rem;
+    }
+
+    .forside_section_header {
+        padding-left: 3rem;
+        margin-top: 0;
+    }
+
+
+    /*---------------- INFORMATION/BESKRIVELSE SECTION ---------------*/
+    .overskrift_r {
+        margin-left: 2rem;
+        margin-right: 2.5%;
+        text-align: left;
+        padding-top: 0%;
+    }
+
+    .nyheder {
+        margin-left: 1rem;
+    }
+
+    .lang_tekststyk {
+        line-height: 180%;
+        margin-right: 17rem;
+        margin-left: 1rem;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .nyhedsbrev {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    /*-------------------------------FOOTER--------------------------------*/
+    .logo {
+        padding-top: 1px;
+        padding-left: 2%;
+        height: 90%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .footer_card {
+        width: 16rem;
+    }
+
+    footer {
+        padding-top: 7%;
+    }
+
+}
+
+/*=============================================================================================
+========================================   COMPUTER   =========================================
+=============================================================================================*/
+
+
+@media screen and (min-width: 1200px) {
+
+    /*-----------------------------DROPDOWN MENUBAR----------------------------*/
+    .menu_bar {
+        background-color: var(--bla);
+        height: 2rem;
+    }
+
+    .menu_items {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu_item:hover {
+        color: var(--sort);
+    }
+
+    form {
+        border: 0px;
+    }
+
+
+    /* DROP DOWN */
+
+    .dropbutton {
+        background-color: #02163c;
+        color: var(--hvid);
+        padding-top: 3px;
+        padding-bottom: 5px;
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: 1rem;
+        border: none;
+    }
+
+    .dropbutton:hover {
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        color: var(--sort);
+    }
+
+    .drop_punkter {
+        display: none;
+        position: absolute;
+        background-color: var(--sort);
+    }
+
+    .drop_punkter a {
+        color: var(--hvid);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .drop_punkter a:hover {
+        /*hover på dropdown punkterne*/
+        background-color: var(--orange);
+        color: black;
+    }
+
+    .dropdown:hover .drop_punkter {
+        display: block;
+        /*punkterne skal stå under hinanden*/
+    }
+
+    .dropdown:hover .dropbutton {
+        /*hover på menupunktet*/
+        color: var(--sort);
+        background-color: var(--orange);
+    }
+
+    .dropdown_ekstra_bue:hover .dropbutton {
+        border-bottom-right-radius: 10px;
+    }
+
+    .active_dropdown {
+        background-color: var(--sort);
+        color: var(--orange);
+        border-radius: 10px;
+    }
+
+    /*------------burger menu (minus)---------*/
+    .m-menu__toggle {
+        display: none;
+    }
+
+
+    /*-----------------------------------------------------
+CONTENT
+-----------------------------------------------------*/
+    .lang_tekststyk {
+        line-height: 180%;
+        margin-right: 40rem;
+        margin-left: 1rem;
+    }
+
+    .logo {
+        padding-top: 6px;
+        padding-left: 4%;
+        height: 120%;
+    }
+
+    .nyhedsbrev {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+}
